@@ -1,10 +1,10 @@
 applications:
-- name: Kitura-Starter
+- path: .
   memory: 256M
   instances: 1
-  random-route: true
+  domain: mybluemix.net
+  name: playingWithCloudFoundrySwift-oct092017
+  host: playingWithCloudFoundrySwift-oct092017
   disk_quota: 1024M
-  command: Kitura-Starter
   buildpack: swift_buildpack
-  #health-check-type: http
-  #health-check-http-endpoint: /health
+  command: Kitura-Starter
